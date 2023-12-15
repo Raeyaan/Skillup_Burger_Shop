@@ -17,55 +17,80 @@
     justify-content: space-evenly;
   }
 }
-
-.menuCard {
-  background-color: white;
-  width: 30%;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.495);
-
-  > div {
-    border-radius: 20px 20px 0 0;
+.explore-button {
+  display: flex;
+  justify-content: center;
+  button {
     background-color: $red;
-    display: flex;
-    align-items: center;
-    padding: 2rem;
     color: white;
-    height: 4rem;
+    border: none;
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: fit-content;
+    border: solid 1px;
+
+    &:hover {
+      background-color: $reddark;
+    }
   }
+}
+.menuCards {
+  display: flex;
+  gap: 19px;
+  margin: 19px 0;
+  justify-content: center;
 
-  > main {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .menuCard {
+    background-color: white;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.495);
 
-    > img {
-      height: 15rem;
-      width: 100%;
-      object-fit: contain;
-    }
-
-    > h5 {
-      font-size: 1.8rem;
-    }
-    > p {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      padding: 1rem 0;
-    }
-
-    > button {
+    > div {
+      border-radius: 20px 20px 0 0;
       background-color: $red;
+      display: flex;
+      align-items: center;
+      padding: 2rem;
       color: white;
-      border: none;
-      padding: 1rem 2rem;
-      width: 100%;
-      border-radius: 10px;
-      cursor: pointer;
+      height: 4rem;
+    }
 
-      &:hover {
-        background-color: $reddark;
+    > main {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > img {
+        height: 15rem;
+        width: 100%;
+        object-fit: contain;
+      }
+
+      > h5 {
+        font-size: 1.8rem;
+      }
+      > p {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 1rem 0;
+      }
+
+      > button {
+        background-color: $red;
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $reddark;
+        }
       }
     }
   }
@@ -81,4 +106,3 @@
     margin: 1rem 0;
   }
 }
-
