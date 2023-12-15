@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Cart from "../cart/Cart";
 function OrderDetails() {
   const [orderedItems, setOrderedItems] = useState({});
 

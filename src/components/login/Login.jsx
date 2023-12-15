@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import {
-  MDBContainer,
-  MDBTabs,
-  MDBTabsItem,
-  MDBTabsLink,
-  MDBTabsContent,
   MDBTabsPane,
   MDBBtn,
   MDBIcon,
@@ -13,7 +8,7 @@ import {
 } from "mdb-react-ui-kit";
 
 function Login() {
-  const [justifyActive, setJustifyActive] = useState("tab1");
+  const [justifyActive] = useState("tab1");
   return (
     <div>
       <MDBTabsPane show={justifyActive === "tab1"}>

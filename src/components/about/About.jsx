@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { RiFindReplaceLine } from "react-icons/ri";
 import me from "../../assets/skj.jpg";
 import "../../styles/about.scss";
 function About() {

@@ -76,9 +76,6 @@ const Cart = () => {
   };
 
   const { subtotal, tax, shippingCharges, total } = calculateTotal();
-  const getQuantity = (itemId) => {
-    return items[itemId].value;
-  };
 
   return (
     <section className="cart">
